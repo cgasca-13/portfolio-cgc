@@ -27,7 +27,6 @@ const FooterContact = () => {
             </div>
             
             <div className="mt-8 pt-4 border-t border-gray-700">
-                <p className="text-center text-sm md:text-base">© 2025 Carlos Gasca Contreras. All rights reserved.</p>
             </div>
         </footer>
     )

@@ -6,15 +6,16 @@ const Navbar = () => {
     return (
         <nav className="bg-[#1C1C1C] text-white px-6 md:px-20 py-4 w-full h-24 mb-8 sticky top-0 z-50">
         <div className="flex justify-between items-center h-full">
-            <a href="/" >
+            <a href="#top" >
                 <p className="text-2xl font-medium">Portfolio</p>
             </a>
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 text-2xl font-medium">
-            <p className="hover:text-gray-400 cursor-pointer transition">About</p>
-            <p className="hover:text-gray-400 cursor-pointer transition">Skills</p>
-            <p className="hover:text-gray-400 cursor-pointer transition">Projects</p>
-            <p className="hover:text-gray-400 cursor-pointer transition">Contact</p>
+            <a href="#top" className="hover:text-gray-400 cursor-pointer transition">Info</a>
+            <a href="#about" className="hover:text-gray-400 cursor-pointer transition">About</a>
+            <a href="#skills" className="hover:text-gray-400 cursor-pointer transition">Skills</a>
+            <a href="#projects" className="hover:text-gray-400 cursor-pointer transition">Projects</a>
+            <a href="#contact" className="hover:text-gray-400 cursor-pointer transition">Contact</a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -32,10 +33,10 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-64 mt-4' : 'max-h-0'}`}>
             <div className="flex flex-col space-y-4 text-xl font-medium pb-4">
-            <p className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>About</p>
-            <p className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>Skills</p>
-            <p className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>Projects</p>
-            <p className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>Contact</p>
+            <a href="#about" className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>About</a>
+            <a href="#skills" className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>Skills</a>
+            <a href="#projects" className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>Projects</a>
+            <a href="#contact" className="hover:text-gray-400 cursor-pointer transition" onClick={() => setIsMenuOpen(false)}>Contact</a>
             </div>
         </div>
         </nav>
